@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282758;
+}
+
+.navs {
+  width: 100%;
+  background: #05043d;
+}
+.navs a {
+  text-decoration: none;
+  color: wheat;
+}
+#navbar-user ul {
+  /* background: linear-gradient(to left, #07976e 0%, #00c9ff 100%); */
+  background-color: transparent;
+}
+
+.navs a img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container {
+  margin-top: 60px;
+}
+.contineredit {
+  padding: 40px;
+}
+
+.imagepr {
+  display: flex;
+  justify-content: center;
+}
+.imageedit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classnav {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  color: wheat;
+  text-decoration: none;
+}
+
+#logout {
+  text-align: center;
+}
+
+#logout img {
+  height: 30px;
+}
+
+.page-divider {
+  border-bottom: 2px solid #bd2323;
+  margin: 10px 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 10px;
+}
+
+h3 {
+  padding-inline-start: 10px;
+}
+
+input[type="text"] {
+  padding-block: 1px;
+  padding-inline: 2px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+}
+
+#content {
+  text-align: center;
+  background-color: #282758;
+
+  padding: 20px;
+}
+
+.profile-image {
+  border: 4px solid #23adbd;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#editProfileButton {
+  background-color: #05043d;
+
+  color: wheat;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#editProfileButton:hover {
+  background-color: #35bdbf;
+}
+
+footer {
+  background: #05043d;
+
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a img {
+  height: 30px;
+  margin: 0 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  z-index: 999;
+  color: wheat;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+.navs {
+  z-index: 1000;
+}
+
+footer {
+  color: wheat;
+}
+.copyright {
+  color: wheat;
+}
