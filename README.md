@@ -12,7 +12,7 @@ SM & MEMBER : Mohammed Younis
 
 
 
-<!-- Resources:
+Resources:
 
 Figma
 Trello
@@ -22,4 +22,4 @@ Tailwindcss
 Bootstrap
 Javascript
 Css
-Html -->
+Html
