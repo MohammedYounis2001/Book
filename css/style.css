@@ -724,6 +724,7 @@ body {
   text-align: center;
   width: 100%;
   gap: 5px;
+  justify-content: center;
 }
 
 /* Functionality ====================================*/
@@ -785,6 +786,34 @@ body {
   .hero {
     width: 100%;
   }
+  footer a {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer {
+    gap: 10px;
+    text-decoration: none;
+    background: #05043d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer i {
+    padding: 5px;
+  }
+  footer .copyright {
+    color: wheat;
+  }
 }
 
 @media (max-width: 520px) {
@@ -814,6 +843,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  footer a {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer {
+    gap: 10px;
+    text-decoration: none;
+    background: #05043d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer i {
+    padding: 5px;
+  }
+  footer .copyright {
+    color: wheat;
   }
 }
 
@@ -853,6 +910,34 @@ body {
   .hero {
     width: 100%;
   }
+  footer a {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer {
+    gap: 10px;
+    text-decoration: none;
+    background: #05043d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer i {
+    padding: 5px;
+  }
+  footer .copyright {
+    color: wheat;
+  }
 }
 
 @media (max-width: 920px) {
@@ -882,6 +967,35 @@ body {
   }
   .hero {
     width: 100%;
+  }
+  footer a {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  footer {
+    gap: 10px;
+    text-decoration: none;
+    background: #05043d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer i {
+    padding: 5px;
+  }
+  footer .copyright {
+    color: wheat;
   }
 }
 

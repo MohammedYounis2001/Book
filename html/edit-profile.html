@@ -3,7 +3,8 @@
 <head>
     <title>Edit Profile</title>
     <link rel="stylesheet" href="/css/edit-prifile.css">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -37,15 +38,6 @@
           class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
           id="user-dropdown"
         >
-          <div class="px-4 py-3">
-            <span class="block text-sm text-gray-900 dark:text-white"
-              >Bonnie Green</span
-            >
-            <span
-              class="block text-sm text-gray-500 truncate dark:text-gray-400"
-              >name@flowbite.com</span
-            >
-          </div>
           <ul class="py-2" aria-labelledby="user-menu-button">
             <li>
               <a
@@ -111,7 +103,7 @@
         >
           <li>
             <a
-              href="#"
+              href="/index.html"
               class="ankur block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
               aria-current="page"
               >Home</a
@@ -152,15 +144,25 @@
 
 <main id="content" class="col-md-9 col-sm-12 ms-sm-auto col-lg-10 px-md-4">
     <div class="flex justify-center items-center p-t16">
-        <div class="mr-20">
-            <img id="profileImage" src="images/profilepicture.png" style="border:#23adbd;" alt="Profile Picture " class="w-72 h-72 rounded-full border-4 border-blue-500" />
-            <div id="changeImageIcon" class="mt-4">
-                <label for="imageInput" class="cursor-pointer">
-                    <i class="fa fa-camera text-4xl cursor-pointer"></i>
-                </label>
-                <input type="file" id="imageInput" class="hidden" />
-            </div>
-        </div>
+      <div class="mr-20">
+        <label for="imageInput" class="cursor-pointer">
+            <img id="profileImage" src="https://cdn.discordapp.com/attachments/1163359164895080498/1163747206692606032/profilepicture.png?ex=6540b30b&is=652e3e0b&hm=252e26c199aef1db31972c1b140afedd0861d98d790c757941da0b726ca6be68&" style="border:#000000;" alt="Profile Picture" class="w-72 h-72 rounded-full border-4 border-blue-500" id="profileImage" onclick="changeImage()">
+            <i class="fa fa-camera text-4xl cursor-pointer"></i>
+        </label>
+        <input type="file" id="imageInput" class="hidden" accept="image/*"  onchange="loadImage(event)">
+      </div>
+
+
+         
+              
+              
+        
+
+
+
+
+
+       
         <form id="edit-profile-form">
           <div class="container">
               <div class="edit-container">
@@ -176,7 +178,7 @@
                       <label for="user-password-input">Password</label>
                       <input type="password" id="user-password-input" name="password">
                   </div>
-                  <button id="editProfileButton" type="submit">Save Changes</button>
+                  <button id="editProfileButton" type="submit" >Save Changes</button>
               </div>
           </div>
       </form>
@@ -192,54 +194,54 @@
 </div>   </div>   </div>
 
 <footer
-style="
-  color: #ffffff;
-  padding: 20px 0;
-  margin-top: 2%;
-  text-align: center;
-"
->
-<div class="container">
-  <div class="row">
-    <div
-      class="col-md-12"
-      style="display: flex; flex-direction: column; align-items: center"
-    >
-      <img
-        src="/New folder (7)/logo.png"
-        alt="Logo"
-        style="height: 40px"
-      />
-      <div style="display: flex; align-items: center; margin: 10px 0">
-        <a href="https://www.linkedin.com/in/reading-bank-8097aa296/"
-          ><i class="fa-brands fa-linkedin-in"></i
-        ></a>
-        <a href="https://twitter.com/BankReading"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a href="mailto:readingbank71@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-      </div>
-      <ul style="list-style: none; padding: 0; display: flex">
-        <li style="margin: 0 10px"><a href="#">HOME</a></li>
-        <li style="margin: 0 10px"><a href="#">ABOUT US</a></li>
-        <li style="margin: 0 10px"><a href="#">BOOKS</a></li>
-        <li style="margin: 0 10px"><a href="#">NEW RELEASE</a></li>
-        <li style="margin: 0 10px"><a href="#">CONTACT US</a></li>
-        <li style="margin: 0 10px"><a href="#">BLOG</a></li>
-      </ul>
-      <div class="copyright" style="margin-top: 10px; font-size: 10px">
-        &copy; 2023 Reading Bank. All Rights Reserved. Privacy | Terms
-        of Service
-      </div>
-    </div>
-  </div>
-</div>
-</footer>
+        style="
+          color: #ffffff;
+          padding: 20px 0;
+          margin-top: 5%;
+          text-align: center;
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-12"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="/New folder (7)/logo.png"
+                alt="Logo"
+                style="height: 40px"
+              />
+              <div style="display: flex; align-items: center; margin: 10px 0">
+                <a href="https://www.linkedin.com/in/reading-bank-8097aa296/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://twitter.com/BankReading"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="mailto:readingbank71@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </div>
+              <ul style="list-style: none; padding: 0; display: flex">
+                <li style="margin: 0 10px"><a href="#">HOME</a></li>
+                <li style="margin: 0 10px"><a href="#">ABOUT US</a></li>
+                <li style="margin: 0 10px"><a href="#">BOOKS</a></li>
+                <li style="margin: 0 10px"><a href="#">NEW RELEASE</a></li>
+                <li style="margin: 0 10px"><a href="#">CONTACT US</a></li>
+                <li style="margin: 0 10px"><a href="#">BLOG</a></li>
+              </ul>
+              <div class="copyright" style="margin-top: 10px; font-size: 10px">
+                &copy; 2023 Reading Bank. All Rights Reserved. Privacy | Terms
+                of Service
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 <script src="db.json" id="json-data" type="application/json"></script>
-<script src="/js/edit-profile.js" type="module"></script>
-
+<script src="Edit-profile.js" type="module"></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
 <!-- <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>

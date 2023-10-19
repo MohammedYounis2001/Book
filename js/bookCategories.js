@@ -7,13 +7,12 @@ let selectedLanguage = "English";
 let currentPage = 1;
 const itemsPerPage = 10;
 //  ------------------------- createCard ------------------------
-
 function createCard(data) {
   const urlSearchParams = new URLSearchParams();
   urlSearchParams.append("id", data["id"]);
   const href =
-    "../html/Detail.html?" + urlSearchParams.toString();
-    console.log( href);
+    "http://127.0.0.1:5502/html/Detail.html?" + urlSearchParams.toString();
+
   var newBooks = document.getElementById("newBooks-section");
   var newBooks_card = document.createElement("div");
   newBooks_card.classList.add("book-card");

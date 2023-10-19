@@ -59,7 +59,7 @@ function getbox(id = " ") {
       const urlSearchParams = new URLSearchParams();
       urlSearchParams.append("id", data["id"]);
       const href =
-        "http://127.0.0.1:5500/html/Detail.html?" + urlSearchParams.toString();
+        "http://127.0.0.1:5502/html/Detail.html?" + urlSearchParams.toString();
 
       let cardElement = document.createElement("div");
 
@@ -101,7 +101,7 @@ ${data["categories"]}
 <p class="inside-page__text">
 ${data["Descriptions"]}
 </p>
-<a href="${href}" class="inside-page__btn inside-page__btn--city">View deals</a>
+<a href="${href}" class="inside-page__btn inside-page__btn--city">Details</a>
 </div>
 </div>
 </div>
@@ -136,7 +136,7 @@ function get2(id = " ") {
       const urlSearchParams = new URLSearchParams();
       urlSearchParams.append("id", data["id"]);
       const href =
-        "http://127.0.0.1:5500/html/Detail.html?" + urlSearchParams.toString();
+        "http://127.0.0.1:5502/html/Detail.html?" + urlSearchParams.toString();
 
       let main = document.getElementById("main");
       let cardElement = document.createElement("div");
@@ -179,7 +179,7 @@ ${data["bookname"]}
 <p class="inside-page__text">
 ${data["Descriptions"]}
 </p>
-<a href="${href}" class="inside-page__btn inside-page__btn--city">View deals</a>
+<a href="${href}" class="inside-page__btn inside-page__btn--city">Details</a>
 </div>
 </div>
 </div>

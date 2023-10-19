@@ -14,12 +14,12 @@ SM & MEMBER : Mohammed Younis
 
 Resources:
 
-Figma
-Trello
-GitHub
-Json server auth
-Tailwindcss
-Bootstrap
-Javascript
-Css
-Html
+- Figma
+- Trello
+- GitHub
+- Json server auth
+- Tailwindcss
+- Bootstrap
+- Javascript
+- Css
+- Html

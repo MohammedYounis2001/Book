@@ -137,6 +137,7 @@ function displayData(data) {
 
   console.log(data["id"]);
   var loc = document.getElementById("main");
+
   loc.innerHTML = ` <div id="fixedImage">
   <div class="mainbook">
   <img src="${data["image"]}" alt="" class="imgbook">
@@ -155,6 +156,8 @@ function displayData(data) {
 
 </div>`;
 
+  const starRatings = generateStarRating(data["Rating"]);
+  loc.querySelector(".star").appendChild(starRatings);
   document.getElementById("a").style.backgroundImage = "url(images/img.jpg)";
 }
 
